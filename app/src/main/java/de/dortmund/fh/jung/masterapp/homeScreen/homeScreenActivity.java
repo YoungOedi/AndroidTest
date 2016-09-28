@@ -46,6 +46,8 @@ public class HomeScreenActivity extends AppCompatActivity {
 
         DaggerHomeScreenComponent.builder().homeScreenPresenterModule(new HomeScreenPresenterModule(homeFragment))
                 .build().inject(this);
+        //To Test if DI worked TODO remoce
+        mHomePresenter.logIn();
 
     }
 
